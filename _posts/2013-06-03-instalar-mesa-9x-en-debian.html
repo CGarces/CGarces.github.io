@@ -1,0 +1,16 @@
+---
+layout: post
+title: Instalar Mesa 9.x en Debian
+date: '2013-06-03T10:15:00.004-07:00'
+author: Carlos Garcés
+tags:
+- intel
+- mesa
+- experimental
+- debian
+modified_time: '2013-06-03T10:16:42.951-07:00'
+blogger_id: tag:blogger.com,1999:blog-1928520019849450453.post-8619802290033514061
+blogger_orig_url: http://pruebasconantix.blogspot.com/2013/06/instalar-mesa-9x-en-debian.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Recientemente <a href="http://packages.qa.debian.org/m/mesa/news/20130528T212711Z.html">se ha incluido la&nbsp;versión&nbsp;9 de Mesa en la rama experimental de Debían</a><br /><br />Esto hace que ahora sea relativamente sencillo instalar esta nueva&nbsp;versión&nbsp;en cualquier&nbsp;distribución&nbsp;basada en Debian que aun no lo tenga en sus repositorios.<br /><br />Lo primero es añadir la rama experimental en la lista de repositorios<br /><br /><b>###### Debian Experimental##########</b><br /><b>deb http://ftp.rediris.es/debian/ experimental main contrib non-free</b><br /><br />Para asegurarnos de que no actualizamos mas cosas de la cuenta modificamos la configuración<br /><br /><b>$ nano /etc/apt/apt.config </b><br /><pre class="brush: bash">APT::Install-Recommends "0";<br /><br />APT::Install-Suggests "0";<br /><br />APT::Default-Release "testing";<br /><br /></pre><br />En mi caso uso el repositorio de "testing", cambiarlo con el repositorio que corresponda en vuestro caso.<br /><br />Ahora solo queda actualizar la lista de paquetes<br /><br /><br /><b>$ apt-get update </b><br />E instalar los paquetes implicados, con el&nbsp;parámetro&nbsp;-t experimental<br /><br /><b>$ apt-get install xserver-xorg-video-intel &nbsp;libgl1-mesa-glx libgl1-mesa-dri xserver-xorg-core -t experimental </b><br /><pre class="brush: bash">Leyendo lista de paquetes... Hecho<br /><br />Creando árbol de dependencias &nbsp; &nbsp; &nbsp;<br /><br />Leyendo la información de estado... Hecho<br /><br />xserver-xorg-core ya está en su versión más reciente.<br /><br />Se instalarán los siguientes paquetes extras:<br /><br />&nbsp; libdrm-dev libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2 libffi5 libgl1-mesa-dev libglapi-mesa libkms1 libllvm3.2 libx11-xcb-dev libxcb-dri2-0-dev<br /><br />&nbsp; libxcb-glx0-dev mesa-common-dev<br /><br />Paquetes sugeridos:<br /><br />&nbsp; libglide3<br /><br />Paquetes recomendados:<br /><br />&nbsp; libtxc-dxtn0<br /><br />Se instalarán los siguientes paquetes NUEVOS:<br /><br />&nbsp; libdrm-dev libdrm-nouveau2 libffi5 libkms1 libllvm3.2 libx11-xcb-dev libxcb-dri2-0-dev libxcb-glx0-dev<br /><br />Se actualizarán los siguientes paquetes:<br /><br />&nbsp; libdrm-intel1 libdrm-radeon1 libdrm2 libgl1-mesa-dev libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa mesa-common-dev xserver-xorg-video-intel<br /><br />9 actualizados, 8 se instalarán, 0 para eliminar y 158 no actualizados.<br /><br />Necesito descargar 18,6 MB de archivos.<br /><br />Se liberarán 8.331 kB después de esta operación.<br /><br />¿Desea continuar [S/n]? S<br /><br /></pre><br />Solo queda realizar un par de pruebas para comprobar que todo funciona correctamente.<br />En mi caso hay una <a href="http://openbenchmarking.org/result/1305294-FO-SNAVSUXA615">ligera mejora de rendimiento</a> gracias a los cambios introducidos por intel en sus ultimas versiones. <br /><br /><br /><br /></div>

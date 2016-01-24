@@ -1,0 +1,70 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+highlighter: pygments
+#permalink: /:year/:month/:day/:title/
+
+# Setup
+title:               Carlos Garcés' Blog
+tagline:             'Software Engineering. Bienvenido a mi blog.'
+
+description:         'Blog realizado con <a href="http://jekyllrb.com" target="_blank">Jekyll</a> para escribir los problemas que resuelvo en mi tiempo libre.'
+url:                 http://cgarces.github.io
+baseurl:             ''
+paginate:            5
+excerpt_separator:   <!--more-->
+
+# About/contact
+author:
+  name:              Carlos Garcés
+  url:               http://cgarces.github.io
+  email:             carlos.garces@gmail.com
+  linkedin:          https://www.linkedin.com/in/carlos-garces-0aa21831
+  
+# Custom vars
+version:             1.0.0
+
+exclude: 
+  - _posts/*.html
+
+
+# prose config
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://cgarces.github.io'
+  #relativeLinks: 'http://cgarces.github.io/links.jsonp'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Categories"
+          placeholder: "Add Categories"
+          alterable: true
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "image"
+        field:
+          element: "text"
+          label: "Add Image to Post"
+          placeholder: "Image path (relative to /assets/post-images/)"
+          alterable: true
+      - name: "excerpt_separator"
+        field:
+          element: "hidden"
+          value: "<!--more-->"
