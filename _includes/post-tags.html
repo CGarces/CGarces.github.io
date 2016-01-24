@@ -1,0 +1,10 @@
+<div>
+  {% if post %}
+    {% assign tags = post.tags %}
+  {% else %}
+    {% assign tags = page.tags %}
+  {% endif %}
+  {% for tag in tags %}
+  <a class="tag-mark" href="/tags/#{{tag|slugize}}"><i class="fa fa-tags"></i>{{tag}}</a>
+  {% endfor %}
+</div>
