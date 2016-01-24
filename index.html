@@ -13,7 +13,7 @@ title: Home
     </h1>
     {{ post.excerpt }}
     <div class="post-meta">
-		    <time class="post-meta-left" datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time> | <a class="post-meta-left" href="{{ post.url }}#disqus_thread"><i class="fa fa-comments fa-lg"></i>&nbsp;<span class="disqus-comment-count" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">&nbsp;</span></a><a class="post-read-more" href="{{ post.url | prepend: site.baseurl }}/#read-more">Leer más <i class="fa fa-angle-double-right"></i></a>
+		    <time class="post-meta-left" datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time> | <a class="post-meta-left" href="{{ post.url }}#comments"><i class="fa fa-comments fa-lg"></i>&nbsp;<span class="disqus-comment-count" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">&nbsp;</span></a><a class="post-read-more" href="{{ post.url | prepend: site.baseurl }}/#read-more">Leer más <i class="fa fa-angle-double-right"></i></a>
 	</div>
   </div>
   {% endfor %}
