@@ -11,10 +11,9 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
-
     {{ post.excerpt }}
     <div class="post-meta">
-		    <span class="post-date">{{ post.date | date_to_string }} | </span><a class="post-read-more" href="{{ post.url | prepend: site.baseurl }}/#read-more">Leer más <i class="fa fa-angle-double-right"></i></a>
+		    <time class="post-date" datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time> | <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">Ver comentarios</a><a class="post-read-more" href="{{ post.url | prepend: site.baseurl }}/#read-more">Leer más <i class="fa fa-angle-double-right"></i></a>
 	</div>
   </div>
   {% endfor %}
