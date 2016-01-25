@@ -58,13 +58,3 @@ prose:
           label: "Post title"
           placeholder: "Title"
           alterable: true
-      - name: "image"
-        field:
-          element: "text"
-          label: "Add Image to Post"
-          placeholder: "Image path (relative to /assets/post-images/)"
-          alterable: true
-      - name: "excerpt_separator"
-        field:
-          element: "hidden"
-          value: "<!--more-->"
