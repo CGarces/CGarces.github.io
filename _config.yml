@@ -28,7 +28,9 @@ version:             1.0.0
 
 exclude: 
   - _posts/*.html
-
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 
 # prose config
 prose:

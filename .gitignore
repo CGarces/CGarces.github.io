@@ -4,6 +4,10 @@ _site
 .ruby-version
 .sass-cache
 
+#Files generated at c9.io
+Gemfile.lock
+.c9
+
 # Numerous always-ignore extensions
 *.diff
 *.err
