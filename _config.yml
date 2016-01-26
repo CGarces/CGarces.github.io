@@ -30,6 +30,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - .c9
 
 # prose config
 prose:
