@@ -39,8 +39,7 @@ Pero no he sabido como hacerlo ya que no me dejaba modificar los ficheros del
 liveCD  
 
   
-Tiro de [este post](http://120linux.com/mover-o-redimensionar-particiones-ntfs-ii-redimensionar-
-de-forma-manual-el-sistema-de-ficheros/) para hacer el proceso a mano:  
+Tiro de [este post](http://pchelppma.blogspot.com.es/2008/11/mover-o-redimensionar-particiones-ntfs_13.html) para hacer el proceso a mano:  
   
 Borro la partición y le asigno el tamaño ~~correcto~~.  
   

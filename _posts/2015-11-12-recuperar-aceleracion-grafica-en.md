@@ -22,8 +22,7 @@ regresión](https://code.google.com/p/chromium/issues/detail?id=509336)
 bastante curioso.
 <!--more-->
 
-Comparando un par de [pruebas de rendimiento](https://dev.windows.com/en-us
-/microsoft-edge/testdrive/demos/fishbowlie/) he visto que mi Acer 5315 con un
+Comparando un par de [pruebas de rendimiento](https://dev.windows.com/en-us/microsoft-edge/testdrive/demos/fishbowlie/) he visto que mi Acer 5315 con un
 T8100 es mas rápido que mi Lenovo G50-80 con un intel 3205U.
 
 Es verdad que el T8100 tiene una frecuencia mas alta (mas fuera bruta) pero me

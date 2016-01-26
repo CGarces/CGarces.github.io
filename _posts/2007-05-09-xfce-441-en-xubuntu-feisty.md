@@ -16,15 +16,12 @@ pega. Los paquetes oficiales para la distribución estable solo se actualizan
 en caso de errores críticos.  
 Esto esta muy bien para dotar al sistema de estabilidad y no marear al usuario
 con continuas actualizaciones.  
-El problema es que el criterio de ubuntu para añadir determinadas
-actualizaciones, puede no coincidir con el mio.  
+El problema es que el criterio de ubuntu para añadir determinadas actualizaciones, puede no coincidir con el mio.  
 En concreto XFCE 4.4.1 contiene actualizaciones en las traducciones, algo que
 yo considero interesante pero evidentemente no es critico.  
 <!--more-->
   
-He seguido [estas
-intruciones](http://acercandoconocimientos.blogspot.com/2007/03/screencast-n2
--actualizando-xfce.html) para actualizar mi sistema.  
+He seguido [estas intruciones](http://acercandoconocimientos.blogspot.com/2007/03/screencast-n2-actualizando-xfce.html) para actualizar mi sistema.  
   
 Después de instalar unas cuantas dependencias (pide unos cuantos paquetes de
 desarrollo, que no tenia) pude empezar la instalación. Recordar instalar el
