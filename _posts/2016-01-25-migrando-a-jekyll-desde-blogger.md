@@ -2,7 +2,10 @@
 layout: post
 categories: null
 published: true
-title: " Migrando a Jekyll desde Blogger"
+tags:
+- Jekyll
+- Github
+title: "Migrando a Jekyll desde Blogger"
 ---
 
 
