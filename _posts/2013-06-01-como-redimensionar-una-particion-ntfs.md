@@ -25,16 +25,16 @@ sectors
   
 Podría haber hecho algo así:  
 
-{% highlight bash %} 
+```bash
     cp /usr/bin/ntfsresize to /usr/bin/ntfsresize.orig  
-{% endhighlight %}
-  
+```
+
 Y luego un bash  
   
-{% highlight bash %} 
+```bash
     #!/bin/bash  
     exec ntfsresize.orig --bad-sectors "$@"  
-{% endhighlight %}
+```
 
 Pero no he sabido como hacerlo ya que no me dejaba modificar los ficheros del
 liveCD  

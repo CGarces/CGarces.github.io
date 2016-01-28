@@ -25,34 +25,33 @@ La configuración es muy fácil solo hay que seguir unos sencillos pasos.
 
 - Elegir el origen de código fuente (Github o Bitbucket) 
 - Seleccionar la plantilla de `ruby` para el tipo de proyecto
-{% highlight batch %}
+```batch
 rvm use 2.2.0 --install
 bundle install
-{% endhighlight %}
+```
 
 A la configuración estándar hay que añadir una linea mas para que se instalen las dependencias de nuestro proyecto. 
 
-{% highlight batch %}
+```batch
 rvm use 2.2.0 --install
 bundle install
 bundle update
-{% endhighlight %}
+```
 
 Para que `bundle install bundle update` funcione es necesario tener un fichero gemfile en el repositorio
 
-{% highlight batch %}
+```batch
 source 'https://rubygems.org'
 gem 'github-pages'
-{% endhighlight %}
-
+```
 
 Ten en cuenta que con este fichero gemfile no solo se instala Jekyll. `github-pages` contiene todas las dependencias y nos asegura que el build sera el mismo que realiza GitHub de forma automática.
 
 En __Test Commands__ únicamente es necesario invocar al build de Jekyll
 
-{% highlight batch %}
+```batch
 bundle exec jekyll build
-{% endhighlight %}
+```
 
 Ahora cada vez que realicemos un commit _en cualquier branch_ se lanzara un build el CodeShip
 
