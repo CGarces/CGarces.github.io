@@ -22,7 +22,7 @@ yo considero interesante pero evidentemente no es critico.considero.
 
 <!-- leer mas -->
   
-He seguido ~~estas intruciones~~ (Act. Enero 2016, el enlace ya no existe) para actualizar mi sistema.  
+He seguido ~~estas instrucciones~~ (Act. Enero 2016, el enlace ya no existe) para actualizar mi sistema.  
   
 Después de instalar unas cuantas dependencias (pide unos cuantos paquetes de
 desarrollo, que no tenia) pude empezar la instalación. Recordar instalar el
