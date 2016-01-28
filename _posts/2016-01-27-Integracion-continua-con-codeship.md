@@ -16,7 +16,8 @@ Ahora le toca el turno a la integración continua.
 Ya había trabajado en el pasado con Cruise Control, Jenkins y Sonar, pero nunca había probado las soluciones que hay en la nube, muchas de ellas gratuitas.
 
 He elegido [codeship](http://codeship.com) por que es el producto usado por uno de los blog en Jekyll que he usado como referencia y tenia un [manual muy detallado](http://www.robertiagar.com/2014/08/25/how-i-manage-my-blog/) de como hacer la integración.
-<!--more-->
+
+<!-- leer mas -->
 
 ### Configuración del proyecto
 

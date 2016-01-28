@@ -4,6 +4,9 @@
 permalink:           pretty
 relative_permalinks: true
 highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough"]
 #permalink: /:year/:month/:day/:title/
 
 # Setup
@@ -14,7 +17,7 @@ description:         'Blog realizado con <a href="http://jekyllrb.com" target="_
 url:                 http://cgarces.github.io
 baseurl:             ''
 paginate:            5
-excerpt_separator:   <!--more-->
+excerpt_separator:   <!-- leer mas -->
 
 # About/contact
 author:

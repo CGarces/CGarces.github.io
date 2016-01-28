@@ -18,8 +18,9 @@ Esto esta muy bien para dotar al sistema de estabilidad y no marear al usuario
 con continuas actualizaciones.  
 El problema es que el criterio de ubuntu para añadir determinadas actualizaciones, puede no coincidir con el mio.  
 En concreto XFCE 4.4.1 contiene actualizaciones en las traducciones, algo que
-yo considero interesante pero evidentemente no es critico.  
-<!--more-->
+yo considero interesante pero evidentemente no es critico.considero.
+
+<!-- leer mas -->
   
 He seguido ~~estas intruciones~~ (Act. Enero 2016, el enlace ya no existe) para actualizar mi sistema.  
   

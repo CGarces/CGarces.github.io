@@ -12,8 +12,9 @@ blogger_orig_url: http://xubuntu-es.blogspot.com/2007/04/en-este-blog-voy-intent
 
 En este blog voy a intentar comentar mis
 experiencias con XUbuntu, esperando que esto ahorre quebraderos de cabeza a
-usuarios con esta distribución y un hardware similar.  
-<!--more-->
+usuarios con esta distribución y un hardware similar.
+
+<!-- leer mas -->
   
 Mi configuración actual es la siguiente:  
   
