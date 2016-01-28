@@ -20,7 +20,8 @@ Estos son los pasos que he seguido para instalar Antix en un disco duro IDE
 Como el disco NTFS tiene sectores mal, GParted se niega a trabajar. Hay que
 hacer que ntfsresice ejecute todas las instrucciones con el parámetro --bad-
 sectors  
-<!--more-->
+
+<!-- leer mas -->
   
 Podría haber hecho algo así:  
 

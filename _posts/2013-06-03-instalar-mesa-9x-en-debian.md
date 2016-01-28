@@ -19,7 +19,8 @@ Debían](http://packages.qa.debian.org/m/mesa/news/20130528T212711Z.html)
 Esto hace que ahora sea relativamente sencillo instalar esta nueva versión en
 cualquier distribución basada en Debian que aun no lo tenga en sus
 repositorios.  
-<!--more-->
+
+<!-- leer mas -->
   
 Lo primero es añadir la rama experimental en la lista de repositorios  
 

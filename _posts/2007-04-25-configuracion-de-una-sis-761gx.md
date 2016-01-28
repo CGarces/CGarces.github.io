@@ -17,8 +17,9 @@ compañía hacia Linux no es precisamente bueno
   
 La instalación de XUbuntu (mas concretamente el servidor X) no detecta
 correctamente la tarjeta gráfica, instalando el driver genérico "VESA", que
-funciona pero su rendimiento no es aceptable.  
-<!--more-->
+funciona pero su rendimiento no es aceptable.
+
+<!-- leer mas -->
   
 Lo primero es seleccionar el driver correcto, modificando el fichero de
 configuración.  

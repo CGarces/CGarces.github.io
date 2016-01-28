@@ -12,9 +12,11 @@ title: "Migrando a Jekyll desde Blogger"
 Tenia entre mis cosas pendientes probar  [Jekyll](https://jekyllrb.com/), un generador de sitios estáticos que se integra muy bien con github pages.
 
 También tenia dos blogs en la plataforma Blogger, completamente abandonados. Así que he decidido migrarlos a Jekyll para refrescar mis conocimientos de CSS, probar alguna cosa (fortawesome, google analytics) y ver las posibilidades de github (edición con [prose](http://prose.io/) e integración continua con [codeship](http://codeship.com) )
-<!--more-->
+
+<!-- leer mas -->
 
 La migración desde Blogger ha sido relativamente sencilla hay que seguir los siguientes pasos:
+
 
 ### Instalar jekyll-import.
 

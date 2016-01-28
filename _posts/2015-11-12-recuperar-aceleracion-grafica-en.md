@@ -20,7 +20,8 @@ ultima versión de Antix con Debian estable, sin systemd
 Me he encontrado con un [bug de
 regresión](https://code.google.com/p/chromium/issues/detail?id=509336)
 bastante curioso.
-<!--more-->
+
+<!-- leer mas -->
 
 Comparando un par de [pruebas de rendimiento](https://dev.windows.com/en-us/microsoft-edge/testdrive/demos/fishbowlie/) he visto que mi Acer 5315 con un
 T8100 es mas rápido que mi Lenovo G50-80 con un intel 3205U.

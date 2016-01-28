@@ -21,7 +21,8 @@ arranque
 {% highlight bash %} 
 timeout: killing '/sbin/modprobe -bv pci:v000010ECd0000816Csv00001734sd00001178bc0Csc07i01' [594]  
 {% endhighlight %}  
-<!--more-->
+
+<!-- leer mas -->
   
 Efectivamente el dispositivo era la tajeta de sonido  
       
