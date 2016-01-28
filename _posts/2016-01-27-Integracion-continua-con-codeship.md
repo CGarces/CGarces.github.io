@@ -25,6 +25,7 @@ La configuración es muy fácil solo hay que seguir unos sencillos pasos.
 
 - Elegir el origen de código fuente (Github o Bitbucket) 
 - Seleccionar la plantilla de `ruby` para el tipo de proyecto
+
 ```batch
 rvm use 2.2.0 --install
 bundle install
