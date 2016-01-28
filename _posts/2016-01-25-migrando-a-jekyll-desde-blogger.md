@@ -22,7 +22,8 @@ En este paso no voy a entrar ya que hay muy buena documentación al respecto. Re
 
 ### Instalar jekyll-import.
 
-Bastara con ejecutar {% highlight bash %} gem install jekyll-import{% endhighlight %} 
+Bastará con ejecutar: 
+{% highlight bash %} gem install jekyll-import{% endhighlight %} 
 
 ### Exportar los post de Blogger en XML 
 
