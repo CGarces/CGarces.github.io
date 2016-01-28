@@ -21,12 +21,12 @@ En concreto XFCE 4.4.1 contiene actualizaciones en las traducciones, algo que
 yo considero interesante pero evidentemente no es critico.  
 <!--more-->
   
-He seguido [estas intruciones](http://acercandoconocimientos.blogspot.com/2007/03/screencast-n2-actualizando-xfce.html) para actualizar mi sistema.  
+He seguido ~~estas intruciones~~ (Act. Enero 2016, el enlace ya no existe) para actualizar mi sistema.  
   
 Después de instalar unas cuantas dependencias (pide unos cuantos paquetes de
 desarrollo, que no tenia) pude empezar la instalación. Recordar instalar el
 paquete g++ ya que si no fallara durante la instalación.  
-  
+
 Una vez instalado, se ve que los cambios son mínimos. Después de mirar el log
 de cambios (cosa que debería haber echo antes) he llegado a la conclusión de
 que no merece la pena hacer la actualización. Si encuentro problemas en la

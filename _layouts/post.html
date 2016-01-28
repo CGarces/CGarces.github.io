@@ -24,7 +24,7 @@
 		<div class="post">
 			<h1 class="post-title">{{ page.title }}</h1>
 			<span class="post-date">{{ page.date | date_to_string }}</span>
-			{{ content | replace: '<!--more-->', '<a class="anchor" id="read-more"></a>' }}
+			{{ content | replace: '<!--more-->', '<span class="anchor" id="read-more"></span>' }}
 			<div class="bottom-teaser cf">
 				<div class="isLeft">
 					<h5 class="index-headline featured"><span>Written by</span></h5>
@@ -33,11 +33,7 @@
 						<h4>{{ site.author.name }}</h4>
 						<p class="bio">{{author.bio}}</p>
 						<div id="linkedin-button">
-							<a href="https://www.linkedin.com/in/carlos-garces-0aa21831">Perfil Linked<i class="fa fa-linkedin-square fa-lg"></i></a>
-		  <!--
-			
-							<a href="https://es.linkedin.com/pub/carlos-garces/31/218/aa"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15_es_ES.png?locale=" width="80" height="15" border="0" alt="Ver el perfil de Carlos Garcés en LinkedIn"></a>
-		-->
+							<a href="{{site.author.linkedin}}">Perfil Linked<i class="fa fa-linkedin-square fa-lg"></i></a>
 						</div>
 						<hr/>
 						<p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
