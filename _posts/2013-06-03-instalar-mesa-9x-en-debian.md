@@ -24,15 +24,15 @@ repositorios.
   
 Lo primero es añadir la rama experimental en la lista de repositorios  
 
-{% highlight bash %} 
+```INI
 ###### Debian Experimental##########
 deb http://ftp.rediris.es/debian/ experimental main contrib non-free
-{% endhighlight %}
-  
+```
+
 Para asegurarnos de que no actualizamos mas cosas de la cuenta modificamos la
 configuración  
   
-{% highlight bash %} 
+```bash
 $ nano /etc/apt/apt.config
 
 APT::Install-Recommends "0";  
@@ -40,8 +40,7 @@ APT::Install-Recommends "0";
 APT::Install-Suggests "0";  
 
 APT::Default-Release "testing";  
-{% endhighlight %}
-    
+```    
 
   
 En mi caso uso el repositorio de "testing", cambiarlo con el repositorio que
@@ -49,13 +48,13 @@ corresponda en vuestro caso.
   
 Ahora solo queda actualizar la lista de paquetes  
   
-{% highlight bash %} 
+```bash
 $ apt-get update
-{% endhighlight %}
+```
 
 E instalar los paquetes implicados, con el parámetro -t experimental  
   
-{% highlight bash %} 
+```bash
 $ apt-get install xserver-xorg-video-intel  libgl1-mesa-glx libgl1-mesa-dri xserver-xorg-core -t experimental
     
     
@@ -96,7 +95,7 @@ $ apt-get install xserver-xorg-video-intel  libgl1-mesa-glx libgl1-mesa-dri xser
     Se liberarán 8.331 kB después de esta operación.  
       
     ¿Desea continuar [S/n]? S  
-{% endhighlight %}
+```
       
 Solo queda realizar un par de pruebas para comprobar que todo funciona
 correctamente.  

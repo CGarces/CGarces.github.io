@@ -24,17 +24,17 @@ funciona pero su rendimiento no es aceptable.
 Lo primero es seleccionar el driver correcto, modificando el fichero de
 configuración.  
 
-{% highlight bash %}   
+```bash
 sudo mousepad /etc/X11/xorg.conf  
-{% endhighlight %}
+```
    
 Buscar en el fichero el valor "vesa" y sustituirlo por "sis"  
   
 También se puede usar la interfaz de configuración del servidor X  
   
-{% highlight bash %}   
+```bash
 sudo dpkg-reconfigure xserver-xorg  
-{% endhighlight %}
+```
   
 Aconsejo el 1° método ya que es mas rápido, e incluso mas sencillo, puesto que
 al reconfigurar el servidor X habrá que especificarle todas las opciones del
@@ -54,14 +54,17 @@ en pantalla completa (no reescalaba el vídeo, y lo veía dentro de un
 recuadro), pera solucionar estos problemas edite el fichero config, que define
 las opciones por defecto.  
 
-{% highlight bash %}     
-./MPlayer/config  
+```bash
+$nano ./MPlayer/config 
+```
+
+```INI
 # Write your default config options here!  
 vo=x11  
 zoom=1  
 fs=on  
-{% endhighlight %}
-  
+```
+
 Mi tarjeta sigue sin tener soporte 3d, pero esto no es un problema para jugar
 a [Freeciv](http://www.freeciv.org) y ahora ya puedo ver vídeos correctamente.
 

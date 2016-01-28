@@ -25,7 +25,7 @@ En este paso no voy a entrar ya que hay muy buena documentación al respecto. Re
 ### Instalar jekyll-import.
 
 Bastará con ejecutar: 
-{% highlight bash %} gem install jekyll-import{% endhighlight %} 
+```bash gem install jekyll-import ``` 
 
 ### Exportar los post de Blogger en XML 
 
@@ -39,14 +39,14 @@ Generar un XML con los post es muy sencillo:
 
 Únicamente hay que indicar la ruta del XML (source), generado en el paso anterior. El resto es opcional
 
-{% highlight bash %} 
+```bash
     $ ruby -rubygems -e 'require "jekyll-import";
     JekyllImport::Importers::Blogger.run({
       "source"                => "/path/to/blog-MM-DD-YYYY.xml",
       "no-blogger-info"       => false, # No guardar la URL antigua y el id de Blogger
       "replace-internal-link" => false, # Remplezar links internos usando el tag post_url de liquid.
     })'
-{% endhighlight %} 
+``` 
 
 Como resultado tendrás unos ficheros .html con su cabecera YAML
 

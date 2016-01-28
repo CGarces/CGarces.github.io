@@ -36,13 +36,13 @@ Para solucionar el bug he cambiado el .desktop que lanza el navegador.
 
 Tan sencillo como editar el fichero
 
-{% highlight bash %}     
+```bash     
 $ sudo leafpad /usr/share/applications/lxde-x-www-browser.desktop 
-{% endhighlight %}
+```
 
 Y añadir el parametro --ignore-gpu-blacklist
 
   
-{% highlight bash %}     
+```bash     
 _Exec=/usr/bin/x-www-browser --ignore-gpu-blacklist %u_
-{% endhighlight %}
+```
