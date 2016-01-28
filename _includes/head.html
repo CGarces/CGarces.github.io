@@ -13,6 +13,9 @@
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
+  {% if page.title == "Home" %}
+  <meta name="google-site-verification" content="uLOYARqOdqSz_uYJq512upP2P7ysJqaEg90Ly19yEJM" />
+  {% endif %}
   
   <!--facebook open graph meta tags-->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
