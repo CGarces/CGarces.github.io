@@ -6,6 +6,7 @@ tags:
 - Jekyll
 - Github
 - CodeShip
+- Integración Continua
 title: "Integración continua con CodeShip"
 ---
 
