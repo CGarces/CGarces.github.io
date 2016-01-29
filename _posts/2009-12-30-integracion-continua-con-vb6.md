@@ -34,7 +34,7 @@ Tenia que revisar manualmente todo y mas de una vez tuve que repetir alguno de l
 
 ###Publicando un proyecto en VB6 con NAnt
 
-Para realizar estas tareas opté por [NAnt](nant.sourceforge.net/), después de haber visto funcionar [Ant](http://ant.apache.org/) en el trabajo. También use tareas de [NAntContrib](http://nantcontrib.sourceforge.net/)
+Para realizar estas tareas opté por [NAnt](http://nant.sourceforge.net/), después de haber visto funcionar [Ant](http://ant.apache.org/) en el trabajo. También use tareas de [NAntContrib](http://nantcontrib.sourceforge.net/)
 
 El script reproduce la mayoría de los pasos detallados arriba, aunque algunos no pueden ser automatizados.
 
@@ -126,7 +126,7 @@ El [resultado final](http://www.pop2owa.com/VBDOX/pop2owa.html) es similar a otr
 
 ###Subir por FTP el log y la documentación
 
-NAnt no tiene tarea para operaciones por FTP ni en el core ni en NAntContrib, pero usando google no me fue difícil encontrar una [tarea de FTP](http://www.spinthemoose.com/~ftptask/).
+NAnt no tiene tarea para operaciones por FTP, ni en el core ni en NAntContrib. Pero usando Google no me fue difícil encontrar una [tarea de FTP](https://github.com/davidalpert/NAntFTPTask).
 
 ```html
 <target name="loadexternaltasks" description="Load NANT tasks">
