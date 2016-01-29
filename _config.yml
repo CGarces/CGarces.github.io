@@ -7,8 +7,9 @@ highlighter: pygments
 markdown: redcarpet
 redcarpet:
   extensions: ["strikethrough"]
+gems:
+  - jekyll-sitemap
 #permalink: /:year/:month/:day/:title/
-
 # Setup
 title:               Carlos Garcés' Blog
 tagline:             'Software Engineering. Bienvenido a mi blog.'
