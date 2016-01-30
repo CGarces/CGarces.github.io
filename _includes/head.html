@@ -5,7 +5,7 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
+  {% include seo_template.html %}
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
@@ -16,14 +16,6 @@
   {% if page.title == "Home" %}
   <meta name="google-site-verification" content="uLOYARqOdqSz_uYJq512upP2P7ysJqaEg90Ly19yEJM" />
   {% endif %}
-  
-  <!--facebook open graph meta tags-->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
-  <meta property="og:type" content="article"/>
-  <meta property="og:description" content="{% if page.layout != "post" %}{{ site.description | strip_html }}{% else %}{{ page.excerpt | strip_html }}{% endif %}"/>
-
-
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/main.css">
