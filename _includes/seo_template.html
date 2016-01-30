@@ -82,7 +82,8 @@
 {% endif %}
 
 {% if seo_url %}
-  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace:'/index.html','/' }}" itemprop="url" />
+  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace:'/index.html','/' }}" />
+  <link itemprop="url"  href="{{ page.url | prepend: seo_url | replace:'/index.html','/' }}" />
   <meta property='og:url' content='{{ page.url | prepend: seo_url | replace:'/index.html','/' }}' />
 {% endif %}
 
