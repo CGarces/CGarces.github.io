@@ -83,7 +83,6 @@
 
 {% if seo_url %}
   <link rel="canonical" href="{{ page.url | prepend: seo_url | replace:'/index.html','/' }}" />
-  <link itemprop="url"  href="{{ page.url | prepend: seo_url | replace:'/index.html','/' }}" />
   <meta property='og:url' content='{{ page.url | prepend: seo_url | replace:'/index.html','/' }}' />
 {% endif %}
 
@@ -106,10 +105,10 @@
 {% if page.date %}
   <meta property="og:type" content="article" />
   {% if page.next.url %}
-    <link rel="next" href="{{ page.next.url | prepend: seo_url | replace:'/index.html','/' }}" title="{{ page.next.title | escape }}" />
+    <link rel="next" href="{{ page.next.url | replace:'/index.html','/' }}" title="{{ page.next.title | escape }}" />
   {% endif %}
   {% if page.previous.url %}
-    <link rel="prev" href="{{ page.previous.url | prepend: seo_url | replace:'/index.html','/' }}" title="{{ page.previous.title | escape }}" />
+    <link rel="prev" href="{{ page.previous.url | replace:'/index.html','/' }}" title="{{ page.previous.title | escape }}" />
   {% endif %}
   <script type="application/ld+json">
     {
