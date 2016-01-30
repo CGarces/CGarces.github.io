@@ -8,6 +8,10 @@ tags:
 - CodeShip
 - Integración Continua
 title: "Integración continua con CodeShip"
+image:
+  url: /public/images/CodeShip.png
+  width: 1056
+  height: 843
 ---
 
 Sigo trabajando en este Blog como escusa para poner al día mis conocimientos y probar cosas nuevas.
