@@ -29,6 +29,10 @@ author:
 # Custom vars
 version:             1.0.0
 
+#SEO options
+seo:
+  title: false
+  post_schema: BlogPosting	
 exclude: 
   - README.md
   - Gemfile
