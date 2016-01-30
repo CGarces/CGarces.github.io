@@ -57,18 +57,32 @@
   {% else %}
     {% assign seo_author_twitter = page.author %}
   {% endif %}
+{% else %}
+  {% if site.author.name %}
+    {% assign seo_author_name = site.author.name %}
+  {% else %}
+    {% assign seo_author_name = site.author %}
+  {% endif %}
+
+  {% if page.author.twitter %}
+    {% assign seo_author_twitter = site.author.twitter %}
+  {% else %}
+    {% assign seo_author_twitter = site.author %}
+  {% endif %}
 {% endif %}
+
+
 {% if seo_author_twitter %}
   {% assign seo_author_twitter = seo_author_twitter | replace:"@","" | prepend:"@" %}
 {% endif %}
 
-{% if seo.post_schema %}
-	{% assign seo_post_schema = seo.post_schema | replace:"@","" | prepend:"@" %}
+{% if site.seo.post_schema %}
+	{% assign seo_post_schema = site.seo.post_schema %}
 {% else %}
     {% assign seo_post_schema = 'NewsArticle' %}
 {% endif %}
 
-{% if seo_title and seo.title %}
+{% if seo_title and site.seo.title %}
   <title>{{ seo_title }}</title>
 {% endif %}
 
@@ -86,20 +100,8 @@
   <meta property='og:url' content='{{ page.url | prepend: seo_url | replace:'/index.html','/' }}' />
 {% endif %}
 
-{% if seo_site_title %}
-  <meta property="og:site_name" content="{{ seo_site_title }}" />
-  <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "WebSite",
-      "name" : {{ seo_site_title | jsonify }},
-      "url" : {{ seo_url | jsonify }}
-    }
-  </script>
-{% endif %}
-
 {% if page.image %}
-  <meta property="og:image" content="{{ page.image }}" />
+  <meta property="og:image" content="{{ page.image.url }}" />
 {% endif %}
 
 {% if page.date %}
@@ -114,12 +116,50 @@
     {
       "@context": "http://schema.org",
       "@type": "{{ seo_post_schema }}",
-      "headline": {{ page.title | jsonify }},
-      "image": {{ page.image | jsonify }},
+      "headline": {{ page.title | prepend: site.url | jsonify }},
+      "image": {
+        "@type": "ImageObject",
+        "url": {{ page.image.url | prepend: site.url | jsonify }},
+        "width": {{ page.image.width | jsonify }},
+        "height": {{ page.image.height | jsonify }}
+      },
       "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
-      "description": {{ page.description | jsonify }}
+  {% if page.modified_time %}
+      "dateModified": {{ page.modified_time | date_to_xmlschema | jsonify }},
+  {% else %}
+      "dateModified": {{ page.date | date_to_xmlschema | jsonify }},
+  {% endif %}
+      "description": {{ seo_description | jsonify }},
+      "author": {
+        "@type": "Person",
+        "name": {{ seo_author_name | jsonify }}
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": {{ seo_author_name | jsonify }}
+      },
+      "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": {{ site.url | jsonify }}
+      }
     }
   </script>
+{% else %}
+  {% if seo_site_title %}
+    <meta property="og:site_name" content="{{ seo_site_title }}" />
+    <script type="application/ld+json">
+      {
+        "@context" : "http://schema.org",
+        "@type" : "WebSite",
+        "name" : {{ seo_site_title | jsonify }},
+        "url" : {{ seo_url | jsonify }}
+      }
+    </script>
+  {% endif %}
+{% endif %}
+
+{% if seo_site_title %}
+  <meta property="og:site_name" content="{{ seo_site_title }}" />
 {% endif %}
 
 {% if site.twitter %}
@@ -128,7 +168,7 @@
   <meta name="twitter:title" content="{{ seo_title }}" />
   <meta name="twitter:description" content="{{ seo_description }}" />
   {% if page.image %}
-    <meta name="twitter:image" content="{{ page.image | escape }}" />
+    <meta name="twitter:image" content="{{ page.image.url | escape }}" />
   {% endif %}
   {% if seo_author_twitter %}
     <meta name="twitter:creator" content="{{ seo_author_twitter }}" />
