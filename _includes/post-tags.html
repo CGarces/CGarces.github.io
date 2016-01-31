@@ -5,6 +5,6 @@
     {% assign tags = page.tags %}
   {% endif %}
   {% for tag in tags %}
-  <a class="tag-mark" href="/tags/#{{tag|slugize|remove: ' '}}"><i class="fa fa-tags"></i>{{tag}}</a>
+  <a rel="tag" class="tag-mark" href="/tags/#{{tag|slugize|remove: ' '}}"><i class="fa fa-tags"></i>{{tag}}</a>
   {% endfor %}
 </div>
