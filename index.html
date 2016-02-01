@@ -26,14 +26,14 @@ sitemap:
 
 <nav class="pagination">
   {% if paginator.next_page %}
-	<a class="newer-posts" href="/page{{paginator.next_page}}"><i class="fa fa-chevron-circle-left"></i> Artículos antiguos</a>
+	<a rel="next" class="newer-posts" href="/page{{paginator.next_page}}"><i class="fa fa-chevron-circle-left"></i> Artículos antiguos</a>
   {% endif %}
   <span class="page-number">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
   {% if paginator.previous_page %}
-	{% if paginator.page == 2 %}
-	  <a class="older-posts" href="/">Artículos nuevos &rarr;</a>
-	{% else %}
-	  <a class="older-posts" href="/page{{paginator.previous_page}}">Artículos nuevos ><i class="fa fa-chevron-circle-right"></i></a>
-	{% endif %}
+  	{% if paginator.page == 2 %}
+  	  <a rel="prev" class="older-posts" href="/">Artículos nuevos &rarr;</a>
+  	{% else %}
+  	  <a rel="prev" class="older-posts" href="/page{{paginator.previous_page}}">Artículos nuevos ><i class="fa fa-chevron-circle-right"></i></a>
+  	{% endif %}
   {% endif %}
 </nav>

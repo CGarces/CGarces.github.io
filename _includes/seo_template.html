@@ -134,7 +134,8 @@
       "description": {{ seo_description | jsonify }},
       "author": {
         "@type": "Person",
-        "name": {{ seo_author_name | jsonify }}
+        "name": {{ seo_author_name | jsonify }},
+        "sameAs" : {{ site.author.linkedin | jsonify }}
       },
       "publisher": {
         "@type": "Person",
@@ -154,7 +155,12 @@
         "@context" : "http://schema.org",
         "@type" : "WebSite",
         "name" : {{ seo_site_title | jsonify }},
-        "url" : {{ seo_url | jsonify }}
+        "url" : {{ seo_url | jsonify }},
+        "author": {
+          "@type": "Person",
+          "name": {{ seo_author_name | jsonify }},
+          "sameAs" : {{ site.author.linkedin | jsonify }}
+        }
       }
     </script>
   {% endif %}
