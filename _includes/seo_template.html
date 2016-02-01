@@ -1,4 +1,5 @@
 <!-- Begin Jekyll SEO tag -->
+{% capture seocache %}
 {% if site.url %}
   {% assign seo_url = site.url | append: site.baseurl %}
 {% elsif site.github.url %}
@@ -81,6 +82,7 @@
 {% else %}
     {% assign seo_post_schema = 'NewsArticle' %}
 {% endif %}
+{% endcapture %}{% assign seocache = nil %}
 
 {% if seo_title and site.seo.title %}
   <title>{{ seo_title }}</title>
