@@ -1,13 +1,14 @@
 # Permalinks
 #
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-highlighter: pygments
+permalink: pretty
+highlighter: rouge
 markdown: redcarpet
 redcarpet:
   extensions: ["strikethrough"]
+
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 #permalink: /:year/:month/:day/:title/
 # Setup
 title:               Carlos Garcés' Blog
