@@ -68,3 +68,7 @@ prose:
           label: "Post title"
           placeholder: "Title"
           alterable: true
+
+#GitHub Metadata
+github:
+  repository_url: https://github.com/CGarces/CGarces.github.io

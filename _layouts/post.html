@@ -39,11 +39,12 @@
 						<p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
 					</section>
 				</div>
-				{{/post}}
 				<div class="isRight">
 				<h5 class="index-headline featured"><span>Tags</span></h5>
 				{% include post-tags.html %}
 				</div>
+				<div class="improve-article">¿Hay algun error en el texto?. 
+				<a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}" title="Ayuda a mejorar el articulo {{ page.path }}">¡Editalo!</a>.</div>
 			</div>
 			<div class="bottom-closer cf">
 				<div class="isLeft">
