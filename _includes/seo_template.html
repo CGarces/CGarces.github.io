@@ -83,12 +83,14 @@
       "@context": "http://schema.org",
       "@type": "{{ seo_post_schema }}",
       "headline": {{ page.title | prepend: site.url | jsonify }},
+  {% if page.image.url %}
       "image": {
         "@type": "ImageObject",
         "url": {{ page.image.url | prepend: site.url | jsonify }},
         "width": {{ page.image.width | jsonify }},
         "height": {{ page.image.height | jsonify }}
       },
+  {% endif %}
       "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   {% if page.modified_time %}
       "dateModified": {{ page.modified_time | date_to_xmlschema | jsonify }},
