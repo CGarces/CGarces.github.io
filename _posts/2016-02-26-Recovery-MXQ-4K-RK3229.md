@@ -20,7 +20,7 @@ Por suerte la gente de crewrktablets tenia una serie de [recoverys para RockChip
 
 <!-- leer mas -->
 
-El recovery se encuentra disponible [en este enlace](https://mega.nz/#!rZQFhZ7C!7wK3c1ybpteXNSJcImocaizeIoWuxLqcsHO1w5wwb4k), pero explico los pasos para que puedan servir de guía en ports similares. Hay que tener en cuenta que es la 1º vez que realizo este proceso, así que es posible que pueda mejorarse en algún aspecto.
+El recovery se encuentra disponible [en este enlace](https://mega.nz/#!WFglTQLL!tKnnPh-Ckw5nSHkvo3xjXcjjSdMve8EZCa7CyE225LE), pero explico los pasos para que puedan servir de guía en ports similares. Hay que tener en cuenta que es la 1º vez que realizo este proceso, así que es posible que pueda mejorarse en algún aspecto.
 
 
 ##Port de un recovery existente
@@ -48,8 +48,14 @@ Es necesario copiar los siguientes ficheros desde recovery_stock al recovery mod
 
 ```bash
 $ cp recovery_stock.img.dump/ramdisk.dump/etc/recovery.fstab CWM_CrewRKTablets_v1.1.img_orig.unkrnl.dump/etc/recovery.fstab
-$ cp recovery_stock.img.dump/ramdisk.dump/init.rc CWM_CrewRKTablets_v1.1.img_orig.unkrnl.dump/init.rc
 $ cp recovery_stock.img.dump/ramdisk.dump/rk30xxnand_ko.ko.3.10.0  CWM_CrewRKTablets_v1.1.img_orig.unkrnl.dumprk30xxnand_ko.ko.3.10.0
+```
+
+El fichero `init.rc` es necesario modificarlo manualmente. Se necesitan ciertos conocimiento para hacerlo correctamente. En mi caso he conseguido que funcione el sideload, pero no he configurado bien las particiones.
+Una vez modificado el fichero del stock recovery, se copia al recovery modificado.
+
+```bash
+$ cp recovery_stock.img.dump/ramdisk.dump/init.rc CWM_CrewRKTablets_v1.1.img_orig.unkrnl.dump/init.rc
 ```
 
 Después de copiar los archivos, es necesario empaquetar de nuevo el recovery.
