@@ -57,6 +57,8 @@ El aparato se reiniciara automáticamente. Volvemos a poner el aparato en modo b
 $ ./upgrade_tool di recovery /path/to/CWM_CrewRKTablets_v1.1_MQX4K_v2.img
 ```
 
+**Actualizacion**. En mis pruebas el recovery falla al instalarlo con `upgrade_tool` con [rkflashkit](https://github.com/linuxerwang/rkflashkit) no me ha dado ningun problema.
+
 El recovery funciona con las teclas de cursor y la tecla de encendido para ejecutar la opción seleccionada.
 
 ##Instalar SuperSU
