@@ -24,7 +24,7 @@ Esto es muy útil pero se quedaba corto así que decidí añadir validaciones ad
 <!-- leer mas -->
 
 
-##HTML5Validator
+## HTML5Validator ##
 
 [Este validador HTML](https://github.com/svenkreiss/html5validator) se asegurara que el código generado cumple con los requerimientos del estándar HTML 5.
 
@@ -41,7 +41,7 @@ Para validar el codigo del directorio `_site` (el directorio usado por Jekyll pa
 html5validator --root _site/
 ```
 
-##HTML-proofer
+## HTML-proofer ##
 
 [html-proofer](https://github.com/gjtorikian/html-proofer) valida el HTML, revisa las imágenes verificando el atributo alt y chequea todos los links de la aplicación.
 
@@ -67,11 +67,11 @@ htmlproof ./_site --check-html --check-favicon --only-4xx --href-ignore "/cgarce
 - `--only-4xx` cuando verifica un enlace ignora los errores que no sean de tipo 4xx (para evitar que el build falle por ejemplo con un 302)
 - `--href-ignore` Ignora los links que coinciden con una expresión regular. Esto lo uso para eliminar los errores al verificar la url canónica de un articulo que aun no ha subido. Si no esta subido al blog, la ruta canónica (que es absoluta) fallaría.
 
-## Configuración final del proyecto
+## Configuración final del proyecto ##
 
 Con las nuevas validaciones la configuración queda de la siguiente manera.
 
-###Setup Commands
+### Setup Commands ###
 
 ```batch
 rvm use 2.2.0 --install
@@ -82,7 +82,7 @@ jdk_switcher use oraclejdk8
 pip install html5validator
 ```
 
-###Test pipelines
+### Test pipelines ###
 
 ```batch
 bundle exec jekyll build
@@ -105,4 +105,3 @@ WARNING:html5validator.validator:"file:/home/rof/src/github.com/CGarces/CGarces.
 ```
 
 En este caso por ejemplo falla porque que el tag elegido para el articulo (Integración Continua) contenía un espacio y la plantilla no estaba preparada para esa situación.
-

@@ -18,16 +18,16 @@ También tenia dos blogs en la plataforma Blogger, completamente abandonados. As
 La migración desde Blogger ha sido relativamente sencilla hay que seguir los siguientes pasos:
 
 
-### Instalar jekyll-import.
+### Instalar jekyll-import. ###
 
 En este paso no voy a entrar ya que hay muy buena documentación al respecto. Recomiendo la [documentación oficial](https://help.github.com/articles/using-jekyll-with-pages/) de github 
 
-### Instalar jekyll-import.
+### Instalar jekyll-import. ###
 
 Bastará con ejecutar: 
 ```bash gem install jekyll-import ``` 
 
-### Exportar los post de Blogger en XML 
+### Exportar los post de Blogger en XML ###
 
 Generar un XML con los post es muy sencillo:
 
@@ -35,7 +35,7 @@ Generar un XML con los post es muy sencillo:
 - En el menú de la izquierda, haz clic en Configuración > Otros.
 - En el apartado "Herramientas del blog", haz clic en Exportar blog > Descargar blog.
 
-### Exportar los post.
+### Exportar los post. ###
 
 Únicamente hay que indicar la ruta del XML (source), generado en el paso anterior. El resto es opcional
 
@@ -50,10 +50,10 @@ Generar un XML con los post es muy sencillo:
 
 Como resultado tendrás unos ficheros .html con su cabecera YAML
 
-## Limpiando el HTML
+### Limpiando el HTML ###
 
 El paso siguiente, opcional pero recomendable para facilitar la lectura del post, es pasar el HTML a markdown yo he usado [html2text](https://github.com/aaronsw/html2text), un script python muy sencillo. No respeta la cabecera YAML, pero es fácil agregarlo teniendo en cuenta que mantenemos el fichero HTML original
 
-## Afinando el markdown
+### Afinando el markdown ###
 
 El siguiente paso es limpiar un poco el post. Al pasar a .md puede que se haya perdido algún formato particular debido al uso de CSS. En mi caso perdí el resaltado del código, pero github soporta [pygments](http://pygments.org/) por defecto, así que mis post quedaron incluso mejor que los originales de Blogger. En caso de tener muchos post recomiendo modificar el código de html2text para que realice estas modificaciones de forma automática.

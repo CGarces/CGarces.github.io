@@ -32,22 +32,22 @@ Tenia que revisar manualmente todo y mas de una vez tuve que repetir alguno de l
 
 <!-- leer mas -->
 
-###Publicando un proyecto en VB6 con NAnt
+### Publicando un proyecto en VB6 con NAnt ###
 
 Para realizar estas tareas opté por [NAnt](http://nant.sourceforge.net/), después de haber visto funcionar [Ant](http://ant.apache.org/) en el trabajo. También use tareas de [NAntContrib](http://nantcontrib.sourceforge.net/)
 
 El script reproduce la mayoría de los pasos detallados arriba, aunque algunos no pueden ser automatizados.
 
-###Cambiar la versión del proyecto de vb6
+### Cambiar la versión del proyecto de vb6 ###
 
 Esta operación la hago a mano, aunque podría intentar automatizarla con la información del repositorio de código fuente (SVN en mi caso)
 
 
-###Generar el log de cambios
+### Generar el log de cambios ###
 
 Este paso también es manual, aunque me planteo que el proceso genere unos ficheros intermedios con los comentarios del SVN para ayudarme a escribir el log.
 
-###Compilar
+### Compilar ###
 
 Para compilar un proyecto de VB6 en NANT se puede usar la tarea vb6 de NAntContrib
 
@@ -65,12 +65,12 @@ Cuando el ejecutable esta compilado, uso la función `fileversioninfo` para obte
 </target>
 ```
 
-###Probar el ejecutable
+### Probar el ejecutable ###
 
 Para probar el ejecutable he elegido [SimplyVBUnit](http://simplyvbunit.sourceforge.net/) ya que no creo que sea posible usar NUnit de una forma tan sencilla.
 El uso de simplyvbunit me llevaría otro post entero así que no voy a entrar en detalles.
 
-###Generar el instalador y cambiar el número de versión
+### Generar el instalador y cambiar el número de versión ###
 
 Para el instalador uso un script de [NSIS](http://NSIS.sourceforge.net/) con una variable pasada como parámetro como numero de versión (opción /D de `makensis`). Así evito tener que crear una nueva versión del instalador cada vez.
 
@@ -88,7 +88,7 @@ NAnt no tiene una tarea para NSIS, pero tampoco lo veo necesario ya que es sufic
 </target>    
 ```
 
-###Generar un zip con los fuentes
+### Generar un zip con los fuentes ###
 
 NAntContrib tiene una tarea para generar ficheros Zip, únicamente es necesario especificarle un fileset. El nombre del fichero se crea versionado.
 
@@ -110,7 +110,7 @@ NAntContrib tiene una tarea para generar ficheros Zip, únicamente es necesario 
 </target>
 ```
 
-###Generar la documentación
+### Generar la documentación ###
 
 La documentación se genera automáticamente con VBDOX, aunque tuve que modificarlo ligeramente para que pudiera ejecutarse por linea de comandos.
 
@@ -124,7 +124,7 @@ La documentación se genera automáticamente con VBDOX, aunque tuve que modifica
 
 El [resultado final](http://www.pop2owa.com/VBDOX/pop2owa.html) es similar a otras herramientas como NDoc.
 
-###Subir por FTP el log y la documentación
+### Subir por FTP el log y la documentación ###
 
 NAnt no tiene tarea para operaciones por FTP, ni en el core ni en NAntContrib. Pero usando Google no me fue difícil encontrar una [tarea de FTP](https://github.com/davidalpert/NAntFTPTask).
 
@@ -157,7 +157,7 @@ NAnt no tiene tarea para operaciones por FTP, ni en el core ni en NAntContrib. P
 </target>
 ```
 
-###Subir a Sourceforge el instalador y los fuentes
+### Subir a Sourceforge el instalador y los fuentes ###
 
 Para subir los ficheros a SourceForge hay varios métodos, pero yo he optado por SCP. Aunque NAntContrib cuenta con una tarea scp, no he sabido usarla correctamente, así que lanzé pscp.exe por linea de comandos.
 
@@ -173,18 +173,15 @@ Para subir los ficheros a SourceForge hay varios métodos, pero yo he optado por
 </target>		
 ```
 
-###Publicar la versión en Sourceforge
+### Publicar la versión en Sourceforge ###
 
 Es otra de las tareas que no puedo automatizar ya que depende de la visibilidad que da SourceForce a sus procesos.
 
 
-###Conclusión
+### Conclusión ###
 
 Como se puede ver, las herramientas como NAnt, MSBuild o Ant no se limitan a compilar un proyecto, pueden usarse para automatizar multitud de tareas, siendo una alternativa muy interesante a los complejos archivos batch que aun a dia de hoy se siguen usando en multitud de proyectos.
 
 Inicialmente NAnt esta orientado a desarrollos .NET pero se puede usar en otros ámbitos y aunque herramientas como NUnit y NDoc no se puedan usar, hay alternativas validas para Visual Basic 6.
 
 Después de casi dos años usando este tipo de herramientas no me imagino realizando este tipo de operaciones de forma manual.
-
-
-

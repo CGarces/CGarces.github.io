@@ -17,14 +17,14 @@ Geekbuying [ha publicado un nuevo firmware](http://blog.geekbuying.com/index.php
 
 <!-- leer mas -->
 
-Necesitaremos los siguiente archivos:
+Necesitaremos los siguientes archivos:
 
-* [Recovery CWM](https://mega.nz/#!WFglTQLL!tKnnPh-Ckw5nSHkvo3xjXcjjSdMve8EZCa7CyE225LE), comentado en el [post anterior]({% post_url 2016-02-26-Recovery-MXQ-4K-RK3229 %}).
+* [Recovery CWM]({{ site.data.metadata.lastCWM }}), comentado en el [post anterior]({% post_url 2016-02-26-Recovery-MXQ-4K-RK3229 %}).
 * [Instalador de SuperSU](http://su.chainfire.eu/SuperSU-Embed.zip)
 
 
 
-##Actualizar el firmware
+## Actualizar el firmware ##
 
 Se asume que tenemos un sistema correctamente configurado para [acceder por ADB]({% post_url 2016-02-22-root-MXQ-4K-RK3229 %})
 
@@ -49,7 +49,7 @@ Loader ver:2.29    Loader Time:2016-01-26 20:19:51
 Upgrade firmware ok.
 ```
 
-##Reemplazar el recovery
+## Reemplazar el recovery ##
 
 El aparato se reiniciara automáticamente. Volvemos a poner el aparato en modo bootloader y reemplazamos el recovery.
 
@@ -61,7 +61,7 @@ $ ./upgrade_tool di recovery /path/to/CWM_CrewRKTablets_v1.1_MQX4K_v2.img
 
 El recovery funciona con las teclas de cursor y la tecla de encendido para ejecutar la opción seleccionada.
 
-##Instalar SuperSU
+## Instalar SuperSU ##
 
 El firmware viene rooteado (con el binario de SU) pero sin utilidad de super user instalada. La forma más fácil de instalarlo es entrar en el recovery que acabamos de instalar:
 

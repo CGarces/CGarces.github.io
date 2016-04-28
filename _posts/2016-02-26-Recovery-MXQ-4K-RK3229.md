@@ -20,10 +20,10 @@ Por suerte la gente de crewrktablets tenia una serie de [recoverys para RockChip
 
 <!-- leer mas -->
 
-El recovery se encuentra disponible [en este enlace](https://mega.nz/#!WFglTQLL!tKnnPh-Ckw5nSHkvo3xjXcjjSdMve8EZCa7CyE225LE), pero explico los pasos para que puedan servir de guía en ports similares. Hay que tener en cuenta que es la 1º vez que realizo este proceso, así que es posible que pueda mejorarse en algún aspecto.
+El recovery se encuentra disponible [en este enlace]({{ site.data.metadata.lastCWM }}), pero explico los pasos para que puedan servir de guía en ports similares. Hay que tener en cuenta que es la 1º vez que realizo este proceso, así que es posible que pueda mejorarse en algún aspecto.
 
 
-##Port de un recovery existente
+## Port de un recovery existente ##
 
 Para realizar el port necesitaremos:
 

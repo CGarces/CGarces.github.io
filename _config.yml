@@ -1,11 +1,11 @@
 # Permalinks
 #
 permalink: pretty
-highlighter: rouge
-markdown: redcarpet
-redcarpet:
-  extensions: ["strikethrough"]
+kramdown:
+   input: GFM
+   hard_wrap: false
 
+highlighter: rouge
 gems:
   - jekyll-sitemap
   - jekyll-paginate

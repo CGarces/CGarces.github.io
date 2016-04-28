@@ -24,7 +24,7 @@ He elegido [codeship](http://codeship.com) por que es el producto usado por uno 
 
 <!-- leer mas -->
 
-### Configuración del proyecto
+### Configuración del proyecto ###
 
 La configuración es muy fácil solo hay que seguir unos sencillos pasos.
 

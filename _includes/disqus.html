@@ -6,7 +6,7 @@
 */
 
 var disqus_config = function () {
-//var disqus_developer = 1; // Comment out when the site is live
+{% if jekyll.environment != "production" %}var disqus_developer = 1;{% endif %}
 this.page.url = "{{ site.url }}{{ page.url | uri_escape }}";
 this.page.identifier = "{{ page.path | split:'/' | last | cgi_escape }}";
 };
