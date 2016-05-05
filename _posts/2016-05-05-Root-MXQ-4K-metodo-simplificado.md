@@ -17,7 +17,7 @@ El script directamente modifica el recovery del dispositivo, en lugar de intenta
 
 Es simple sencillo y debería funcionar también en Windows (aunque solo lo he probado en Linux)
 
-El unico problema es que all modificar el recovery, este script puede no ser compatible con otros dispositivos. *No usar este metodo en otros aparatos*
+El unico problema es que al modificar el recovery, este script puede no ser compatible con otros dispositivos. *No usar este metodo en otros aparatos*
 
 <!-- leer mas -->
 
