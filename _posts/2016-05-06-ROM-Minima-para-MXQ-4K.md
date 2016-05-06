@@ -7,7 +7,7 @@ tags:
 - MXQ-4K
 title: "ROM Mínima para MXQ-4K"
 image:
-  url: /public/images/info.png
+  url: /public/images/rom/info.jpg
   width: 1280
   height: 720
 ---
