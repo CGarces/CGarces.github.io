@@ -37,7 +37,7 @@ Una vez que el aparato esta el modo bootloader es necesario conectarlo por USB a
 
 Las utilidades de rockchip se encuentran en multitud de repositorios, como  https://github.com/geekboxzone/utils o https://github.com/MozOpenHard/CHIRIMEN-tools
 
-Únicamente es necesario descargarlo y ejecutar la utilidad de upgrade. [Este manual](http://wiki.radxa.com/Rock/flash_the_image) recoge las opciones con más detalle
+Únicamente es necesario descargarlo y ejecutar la utilidad de upgrade.
 
 ```bash
 $ git clone https://github.com/geekboxzone/utils
@@ -49,29 +49,34 @@ Loader ver:2.29    Loader Time:2016-01-26 20:19:51
 Upgrade firmware ok.
 ```
 
+[Este manual](http://wiki.radxa.com/Rock/flash_the_image) recoge las opciones con más detalle
+
 ## Reemplazar el recovery ##
 
-El aparato se reiniciara automáticamente. Volvemos a poner el aparato en modo bootloader y reemplazamos el recovery.
+El aparato se reiniciara automáticamente. Normalmente el flash del recovery se realiza por bootloader, pero también se puede instalar por adb sin necesidad de reiniciar.
+
+Seleccionamos "Conectado a PC" en las opciones de USB para poder acceder por adb y ejecutamos lo siguiente.
 
 ```bash
-$ ./upgrade_tool di recovery /path/to/CWM_CrewRKTablets_v1.1_MQX4K_v2.img
+adb push [archivo de recovery] /mnt/sdcard/recovery.img
+adb shell "dd if=/mnt/sdcard/recovery.img of=/dev/block/rknand_recovery"
 ```
 
-**Actualizacion**. En mis pruebas el recovery falla al instalarlo con `upgrade_tool` con [rkflashkit](https://github.com/linuxerwang/rkflashkit) no me ha dado ningun problema.
+Para probar el recovery únicamente es necesario reiniciar en modo recovery
+
+```bash
+adb reboot recovery
+```
 
 El recovery funciona con las teclas de cursor y la tecla de encendido para ejecutar la opción seleccionada.
 
 ## Instalar SuperSU ##
 
-El firmware viene rooteado (con el binario de SU) pero sin utilidad de super user instalada. La forma más fácil de instalarlo es entrar en el recovery que acabamos de instalar:
+La forma más fácil de instalarlo es entrar en el recovery que acabamos de instalar.
 
-```bash
-$ adb reboot recovery
-```
+Dentro del recovery seleccionamos `install zip -> install zip from sideload`
 
-Seleccionamos `install zip -> install zip from sideload`
-
-Desde el PC, enviamos el instalador.
+Desde el PC, enviamos el [instalador de SuperSU](http://su.chainfire.eu/SuperSU-Embed.zip).
 
 ```bash
 $ adb sideload /path/to/SuperSU-Embed.zip
