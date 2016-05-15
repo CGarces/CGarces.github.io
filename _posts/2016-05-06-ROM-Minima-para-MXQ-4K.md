@@ -22,13 +22,16 @@ La ROM esta basada en la versión de fabrica del 8 de Marzo de 2016 con las sigu
 * Eliminadas **TODAS** las aplicaciones de fabrica.
 * Google Play Store instalado con las dependencias mínimas.
 
-NOTA. Esta ROM funciona si tienes una ROM igual o superior a la 08032016. Si lo instalas desde la 27022016 se producirá un bootloop que no he sabido solucionar.
+**NOTA**. Esta ROM funciona si tienes una ROM igual o superior a la 08032016. Si lo instalas desde la 27022016 se producirá un bootloop.
+Para solucionar el bootloop, hay que sustituir las particiones de recovery y misc por las que vienen el la stock ROM 08032016 o directamente realizar el flash de [la ROM entera](http://blog.geekbuying.com/index.php/2016/03/21/mxq-4k-rk3229-smart-tv-box-firmware-update-2/).
 
 <!-- leer mas -->
 
 ## Actualizar el firmware ##
 
-[Descarga la ROM]({{ site.data.metadata.ROM1 }}) y busca un cable USB A - A para realizar el proceso de flash.
+~~[Descarga la ROM]({{ site.data.metadata.ROM1 }})~~ y busca un cable USB A - A para realizar el proceso de flash.
+
+**Actualización**. Hay una nueva ROM disponible, [visita el post]({{ site.baseurl }}/{{ site.data.metadata.LastROMPost}}) correspondiente para ver las novedades y descargar la ultima versión
 
 Con Linux el flash se puede realizar con la utilidad `upgrade_tool` ya explicada [este post]({% post_url 2016-03-22-Actualizar-firmware-MXQ-4K-RK3229 %})
 
@@ -59,7 +62,7 @@ Como se puede ver en la imagen, se han eliminado todas las aplicaciones de fabri
 
 ![Aplicaciones de sistema](/public/images/rom/aplicaciones.jpg)
 
-La instalación deja 4.29 GB libres para instalar aplicaciones. Más que suficiente para una instalacion de KODI si los archivos multimedia están en un disco duro externo.
+La instalación deja 4.29 GB libres para instalar aplicaciones. Más que suficiente para una instalación de KODI si los archivos multimedia están en un disco duro externo.
 
 ![Espacio libre](/public/images/rom/almacenamiento.jpg)
 
