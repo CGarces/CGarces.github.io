@@ -16,7 +16,7 @@ def config
 end
 
 def serve_site
-  sh 'bundle exec jekyll build'
+  sh 'bundle exec jekyll serve -H $IP -P $PORT -c _config.yml,_config_'  +  ENV['RAILS_ENV'] + '.yml --detach'
 end
 
 def html_proofer

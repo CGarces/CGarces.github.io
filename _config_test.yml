@@ -1,12 +1,14 @@
 #url: https://blog-cgarces.c9users.io/
-url: http://127.0.0.1:4000/
+url: http://127.0.0.1:4000
 
 proofer:
   check_html: true
   url_ignore:
-    - http://www.linkedin.com/in/carlos-garces-0aa21831
+    - "#comments"
     - http://4pda.ru/forum/index.php?showtopic=723460
+    - http://www.linkedin.com/in/carlos-garces-0aa21831
+    - !ruby/regexp '/https:\/\/github\.com\/CGarces\/CGarces\.github\.io\/edit\/master\/_posts\/.*/i'
   typhoeus:
-    timeout: 10
+    timeout: 20
     headers:
       User-Agent: "Mozilla/5.0 (compatible; robot de Google/2.1; +http://www.google.com/bot.html)"
