@@ -1,4 +1,21 @@
-echo execute html5validator
+
+#!/bin/sh
+
+set -e
+
+title () {
+  echo ""
+  echo "-------------------------------"
+  echo $1
+  echo "-------------------------------"
+  echo ""
+}
+
+title "checking site"
+RAILS_ENV=test bundle exec rake test
+
+title "execute html5validator"
 html5validator --root _site/
-echo execute htmlproof
-htmlproofer ./_site --check-html --check-favicon --only-4xx
+
+title "Cleaning up..."
+rm -Rf _site

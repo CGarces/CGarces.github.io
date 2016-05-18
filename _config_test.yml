@@ -1,4 +1,4 @@
-environment: development
+#url: https://blog-cgarces.c9users.io/
 url: http://0.0.0.0:8080/
 
 proofer:
