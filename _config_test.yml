@@ -4,6 +4,7 @@ url: http://127.0.0.1:4000/
 proofer:
   url_ignore:
     - http://www.linkedin.com/in/carlos-garces-0aa21831
+    - http://4pda.ru/forum/index.php?showtopic=723460
   check_html: true
 
 
