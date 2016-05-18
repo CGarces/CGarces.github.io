@@ -1,5 +1,5 @@
 #url: https://blog-cgarces.c9users.io/
-url: http://0.0.0.0:8080/
+url: http://127.0.0.1:4000/
 
 proofer:
   url_ignore:

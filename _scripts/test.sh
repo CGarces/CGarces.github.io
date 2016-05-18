@@ -12,7 +12,7 @@ title () {
 }
 
 title "checking site"
-RAILS_ENV=test bundle exec rake test
+bundle exec rake test
 
 title "execute html5validator"
 html5validator --root _site/

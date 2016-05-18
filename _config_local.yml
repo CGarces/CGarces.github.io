@@ -1,5 +1,5 @@
 environment: development
-url: http://0.0.0.0:8080/
+url: https://blog-cgarces.c9users.io/
 
 proofer:
   url_ignore:
