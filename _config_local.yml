@@ -2,9 +2,13 @@ environment: development
 url: https://blog-cgarces.c9users.io/
 
 proofer:
+  check_html: true
   url_ignore:
     - http://www.linkedin.com/in/carlos-garces-0aa21831
-  check_html: true
+  typhoeus:
+    timeout: 10
+    headers:
+      User-Agent: "Mozilla/5.0 (compatible; robot de Google/2.1; +http://www.google.com/bot.html)"
 
 
 #  url_ignore:
