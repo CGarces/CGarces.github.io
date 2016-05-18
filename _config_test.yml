@@ -5,6 +5,7 @@ proofer:
   check_html: true
   url_ignore:
     - http://www.linkedin.com/in/carlos-garces-0aa21831
+    - http://4pda.ru/forum/index.php?showtopic=723460
   typhoeus:
     timeout: 10
     headers:

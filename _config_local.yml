@@ -1,5 +1,4 @@
 environment: development
-url: https://blog-cgarces.c9users.io/
 
 proofer:
   check_html: true
