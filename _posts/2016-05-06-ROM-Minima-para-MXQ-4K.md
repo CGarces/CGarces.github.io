@@ -18,7 +18,7 @@ La ROM esta basada en la versión de fabrica del 8 de Marzo de 2016 con las sigu
 
 * [Recovery CWM]({{ site.data.metadata.lastCWM }}), creado en [este post anterior]({% post_url 2016-02-26-Recovery-MXQ-4K-RK3229 %}).
 * Permisos root con superSU instalado.
-* Kernel de la ROM 30032016.
+* ~~Kernel de la ROM 30032016~~ El kernel es el mismo que la ROM 08032016 debido a un error con el puntero del ratón.
 * Eliminadas **TODAS** las aplicaciones de fabrica.
 * Google Play Store instalado con las dependencias mínimas.
 
