@@ -38,6 +38,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - Rakefile
   - .c9
 
 # prose config

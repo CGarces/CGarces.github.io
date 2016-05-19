@@ -1,0 +1,11 @@
+---
+disallows:
+  - /tags*
+  - /404.html
+---
+
+User-agent: *{% for disallowed in page.disallows %}
+Disallow: {{ disallowed }}{% endfor %}
+Allow: /
+Sitemap: http://cgarces.github.io/sitemap.xml
+Host: cgarces.github.io
