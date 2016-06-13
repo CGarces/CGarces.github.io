@@ -13,7 +13,7 @@ image:
 ---
 
 
-Geekbuying [ha publicado un nuevo firmware](http://blog.geekbuying.com/index.php/2016/03/21/mxq-4k-rk3229-smart-tv-box-firmware-update-2/). He aprovechado para probar la utilidades de rockchip e instalar el SuperSU desde el recovery
+Geekbuying [ha publicado un nuevo firmware](http://blog.geekbuying.com/index.php/2016/03/21/mxq-4k-rk3229-smart-tv-box-firmware-update-2/). He aprovechado para probar las utilidades de rockchip e instalar el SuperSU desde el recovery
 
 <!-- leer mas -->
 
