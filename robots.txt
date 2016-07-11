@@ -2,6 +2,7 @@
 disallows:
   - /tags*
   - /404.html
+  - /jekyll-seo-tag-test/
 ---
 
 User-agent: *{% for disallowed in page.disallows %}
