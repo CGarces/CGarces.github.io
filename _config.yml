@@ -9,6 +9,8 @@ highlighter: rouge
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-seo-tag
+  
 #permalink: /:year/:month/:day/:title/
 # Setup
 title:               Carlos Garcés' Blog
@@ -30,10 +32,16 @@ author:
 # Custom vars
 version:             1.0.0
 
+contact_links:
+  name: LinkedIn
+  url: https://www.linkedin.com/in/BenBalter
+  icon: linkedin
+
 #SEO options
 seo:
   title: false
-  post_schema: BlogPosting	
+  post_schema: BlogPosting
+  
 exclude: 
   - README.md
   - Gemfile
