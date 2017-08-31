@@ -6,9 +6,10 @@ kramdown:
    hard_wrap: false
 
 highlighter: rouge
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-github-metadata
 #permalink: /:year/:month/:day/:title/
 # Setup
 title:               Carlos Garcés' Blog
@@ -71,5 +72,4 @@ prose:
           alterable: true
 
 #GitHub Metadata
-github:
-  repository_url: https://github.com/CGarces/CGarces.github.io
+repository: CGarces/CGarces.github.io

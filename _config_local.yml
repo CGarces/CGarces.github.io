@@ -7,18 +7,8 @@ proofer:
     - "#comments"
     - /edit/master/404.html  
     - http://www.linkedin.com/in/carlos-garces-0aa21831
-    - !ruby/regexp '/https:\/\/github\.com\/CGarces\/CGarces\.github\.io\/edit\/master\/_posts\/.*/i'
+    - !ruby/regexp '/http:\/\/github\.com\/CGarces\/CGarces\.github\.io\/edit\/master\/_posts\/.*/i'
   typhoeus:
     timeout: 20
     headers:
       User-Agent: "Mozilla/5.0 (compatible; robot de Google/2.1; +http://www.google.com/bot.html)"
-
-
-#  url_ignore:
-#    - "#comments"
-#    - !ruby/regexp '/https?:\/\/(www)?\.youtube\.com\/watch\?v=.*/i'
-#    - !ruby/regexp '/https?:\/\/(www)?\.youtube\.com\/watch\?v=.*/i'
-#github:
-#  repository_nwo: "benbalter/benbalter.github.com"
-#  owner_url: "https://github.com/benbalter"
-#  repository_url: "https://github.com/benbalter/benbalter.github.com"

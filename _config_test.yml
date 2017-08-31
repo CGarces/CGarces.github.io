@@ -7,7 +7,7 @@ proofer:
     - "#comments"
     - http://4pda.ru/forum/index.php?showtopic=723460
     - http://www.linkedin.com/in/carlos-garces-0aa21831
-    - !ruby/regexp '/https:\/\/github\.com\/CGarces\/CGarces\.github\.io\/edit\/master\/_posts\/.*/i'
+    - !ruby/regexp '/http:\/\/github\.com\/CGarces\/CGarces\.github\.io\/edit\/master\/_posts\/.*/i'
   typhoeus:
     timeout: 20
     headers:
