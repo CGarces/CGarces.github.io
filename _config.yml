@@ -73,3 +73,7 @@ prose:
 
 #GitHub Metadata
 repository: CGarces/CGarces.github.io
+
+github:
+  source:
+    branch: master
